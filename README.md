@@ -1,56 +1,61 @@
-# ☸️ Kubernetes Helm Demo
+# ☸️ Kubernetes Helm Demo 🇬🇧
 
-This repository demonstrates how to deploy a simple web application using **Helm** on a Kubernetes cluster.
+## 📋 Table of Contents
+- [Project Overview](#project-overview)
+- [How to Deploy](#how-to-deploy)
+- [Customization](#customization)
+- [Author](#author)
 
-## 🧱 Project Structure
+## 📦 Project Overview
+This repository demonstrates deploying a simple app with Helm on Kubernetes.
 
-```
-k8s-helm-demo/
-├── helm/
-│   └── myapp/
-│       ├── Chart.yaml
-│       ├── values.yaml
-│       └── templates/
-│           ├── deployment.yaml
-│           └── service.yaml
-```
+**Stack:**
+- Kubernetes
+- Helm
 
-## 🚀 How to Use
-
-### 1. Prerequisites
-
-- A Kubernetes cluster (e.g., Minikube, kind, EKS, GKE, etc.)
-- Helm installed (`helm version`)
-
-### 2. Install the Chart
-
+## 🚀 How to Deploy
 ```bash
 cd helm
 helm install myapp ./myapp
-```
-
-### 3. Check the Deployment
-
-```bash
 kubectl get all
-```
-
-### 4. Uninstall
-
-```bash
 helm uninstall myapp
 ```
 
-## 🔧 Customize
+## 🔧 Customization
+Edit `values.yaml` to change image, replicas, or ports.
 
-Edit `values.yaml` to change:
-- Image name and tag
-- Replica count
-- Port number
-
-You can also add Ingress, ConfigMaps, or Secrets to extend the chart.
-
-## 📬 Author
-
+## 💼 Author
 Zakaria Msala – Freelance DevOps Engineer  
+[LinkedIn](https://linkedin.com/in/zakaria-msala)
+
+---
+
+# ☸️ Démo Kubernetes Helm 🇫🇷
+
+## 📋 Sommaire
+- [Présentation du projet](#présentation-du-projet)
+- [Déploiement](#déploiement)
+- [Personnalisation](#personnalisation)
+- [Auteur](#auteur-1)
+
+## 📦 Présentation du projet
+Ce dépôt montre le déploiement d’une application simple avec Helm sur Kubernetes.
+
+**Stack :**
+- Kubernetes
+- Helm
+
+## 🚀 Déploiement
+```bash
+cd helm
+helm install myapp ./myapp
+kubectl get all
+helm uninstall myapp
+```
+
+## 🔧 Personnalisation
+Modifier `values.yaml` pour changer l’image, le nombre de réplicas ou les ports.
+
+## 💼 Auteur
+Zakaria Msala – Ingénieur DevOps Freelance  
 [LinkedIn](https://linkedin.com/in/zakaria-msala)
